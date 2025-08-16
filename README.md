@@ -292,8 +292,8 @@ uv run python voice_storyteller_client.py
 ### Quick Start Summary
 ```bash
 # The entire setup in 3 commands:
-git clone https://github.com/yourusername/ai-storyteller.git
-cd ai-storyteller
+git clone https://github.com/sultan-hassan/Hikaya.git
+cd Hikaya
 uv sync && echo "ANTHROPIC_API_KEY=your_key" > .env
 
 # Run it:
