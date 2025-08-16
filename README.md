@@ -1,5 +1,25 @@
 AI-powered Kids Storyteller (generated and powered by Claude) as part of the 'Build the Future with MCP' Hackathon (https://lu.ma/ubc9n92v?tk=nCAZZ0&utm_source=ep-LSmBrViHqG). 
 
+
+
+**Ready to create magical stories with UV's blazing speed? Let's get started! ⚡🌟**
+
+### Quick Start Summary
+```bash
+# The entire setup in 3 commands:
+git clone https://github.com/sultan-hassan/Hikaya.git
+cd Hikaya
+uv sync && echo "ANTHROPIC_API_KEY=your_key" > .env
+
+# Run it:
+uv run storyteller
+```
+
+![](./pipeline.png)
+
+
+
+
 # Installation and Setup Guide (Using UV)
 
 ## 📋 Prerequisites
@@ -284,20 +304,3 @@ uv run python voice_storyteller_client.py
 - **UV Documentation**: https://docs.astral.sh/uv/
 - **Project Issues**: Report bugs on GitHub Issues
 - **UV Issues**: https://github.com/astral-sh/uv/issues
-
----
-
-**Ready to create magical stories with UV's blazing speed? Let's get started! ⚡🌟**
-
-### Quick Start Summary
-```bash
-# The entire setup in 3 commands:
-git clone https://github.com/sultan-hassan/Hikaya.git
-cd Hikaya
-uv sync && echo "ANTHROPIC_API_KEY=your_key" > .env
-
-# Run it:
-uv run storyteller
-```
-
-![](./pipeline.png)
