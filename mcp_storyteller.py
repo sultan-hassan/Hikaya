@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Real MCP Server for AI-Powered Kids Storyteller with Voice Narration
+MCP Server for AI-Powered Kids Storyteller with Voice Narration
 Implements the official Model Context Protocol specification
 """
 
@@ -397,7 +397,7 @@ class StoryGenerator:
             return " ".join(words[:target_length])
         return story
 
-# Real MCP Server Implementation
+# MCP Server Implementation
 if not MCP_AVAILABLE:
     print("❌ MCP library not available. Install with: pip install mcp")
     sys.exit(1)
@@ -536,7 +536,7 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
 
 async def main():
     """Run the MCP server."""
-    logger.info("🚀 Starting Real MCP Storyteller Server")
+    logger.info("🚀 Starting MCP Storyteller Server")
     logger.info(f"🖥️ System: {platform.system()}")
     logger.info(f"🤖 Claude: {'✅ Available' if story_generator.claude.available else '❌ Not Available'}")
     
