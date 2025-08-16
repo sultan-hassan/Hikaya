@@ -7,7 +7,7 @@ AI-powered Kids Storyteller (generated and powered by Claude) as part of the 'Bu
 ### Quick Start Summary
 ```bash
 # The entire setup in 4 commands (Simple Approach):
-git clone https://github.com/yourusername/Hikaya.git
+git clone https://github.com/sultan-hassan/Hikaya.git
 cd Hikaya
 uv venv && source .venv/bin/activate
 uv pip install -r requirements.txt && echo "ANTHROPIC_API_KEY=your_key" > .env
@@ -46,7 +46,7 @@ pip install uv
 ### 2. Clone and Setup Project
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Hikaya.git
+git clone https://github.com/sultan-hassan/Hikaya.git
 cd Hikaya
 
 # Option A: Simple dependency-only install (recommended for most users)
