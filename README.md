@@ -27,7 +27,7 @@ pip install uv
 ```bash
 # Clone the repository
 git clone https://github.com/sultan-hassan/Hikaya.git
-cd ai-storyteller
+cd Hikaya
 
 # Create virtual environment and install dependencies (one command!)
 uv sync
