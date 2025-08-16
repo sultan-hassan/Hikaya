@@ -26,7 +26,7 @@ pip install uv
 ### 2. Clone and Setup Project
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ai-storyteller.git
+git clone https://github.com/sultan-hassan/Hikaya.git
 cd ai-storyteller
 
 # Create virtual environment and install dependencies (one command!)
