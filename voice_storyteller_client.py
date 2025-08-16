@@ -49,7 +49,7 @@ class MCPClient:
         
         request = {"method": "tools/list"}
         
-        from voice_storyteller_server_fixed import EnhancedMCPServer
+        from voice_storyteller_server import EnhancedMCPServer
         server = EnhancedMCPServer()
         response = await server.handle_request(request)
         
@@ -68,7 +68,7 @@ class MCPClient:
             }
         }
         
-        from voice_storyteller_server_fixed import EnhancedMCPServer
+        from voice_storyteller_server import EnhancedMCPServer
         server = EnhancedMCPServer()
         response = await server.handle_request(request)
         

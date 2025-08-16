@@ -45,7 +45,7 @@ pip install uv
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/Hikaya.git
-cd hikaya
+cd Hikaya
 
 # Option A: Simple dependency-only install (recommended for most users)
 uv pip install -r requirements.txt
