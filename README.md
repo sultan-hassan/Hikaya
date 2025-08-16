@@ -1,7 +1,5 @@
 AI-powered Kids Storyteller (generated and powered by Claude) as part of the 'Build the Future with MCP' Hackathon (https://lu.ma/ubc9n92v?tk=nCAZZ0&utm_source=ep-LSmBrViHqG). 
 
-
-
 **Ready to create magical stories with UV's blazing speed? Let's get started! ⚡🌟**
 
 ### Quick Start Summary
@@ -10,7 +8,7 @@ AI-powered Kids Storyteller (generated and powered by Claude) as part of the 'Bu
 git clone https://github.com/yourusername/Hikaya.git
 cd Hikaya
 uv venv && source .venv/bin/activate
-uv pip install -r requirements-simple.txt && echo "ANTHROPIC_API_KEY=your_key" > .env
+uv pip install -r requirements.txt && echo "ANTHROPIC_API_KEY=your_key" > .env
 
 # Run it:
 python voice_storyteller_client.py
@@ -46,11 +44,11 @@ pip install uv
 ### 2. Clone and Setup Project
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/hikaya.git
+git clone https://github.com/yourusername/Hikaya.git
 cd hikaya
 
 # Option A: Simple dependency-only install (recommended for most users)
-uv pip install -r requirements-simple.txt
+uv pip install -r requirements.txt
 
 # Option B: Full project install with editable mode
 uv sync
@@ -59,54 +57,7 @@ uv sync
 uv sync --extra dev
 ```
 
-### 3. Alternative: Simple Requirements File Approach
-
-If you encounter build issues, use the traditional approach:
-
-Create `requirements-simple.txt`:
-```txt
-# Core Dependencies
-python-dotenv>=1.0.0
-
-# AI and Claude Integration  
-anthropic>=0.25.0
-
-# Voice Synthesis Engines
-pyttsx3>=2.90
-gTTS>=2.4.0
-edge-tts>=6.1.9
-
-# Audio Processing and Playback
-pygame>=2.5.2
-pydub>=0.25.1
-
-# Web and Network
-aiohttp>=3.9.1
-requests>=2.31.0
-
-# Data Processing
-numpy>=1.24.3
-
-# UI and Logging
-colorama>=0.4.6
-rich>=13.7.0
-```
-
-Then install with:
-```bash
-# Create virtual environment with UV
-uv venv
-
-# Activate environment
-source .venv/bin/activate  # macOS/Linux
-# or
-.venv\Scripts\activate     # Windows
-
-# Install dependencies
-uv pip install -r requirements-simple.txt
-```
-
-### 4. Platform-Specific Audio Dependencies
+### 3. Platform-Specific Audio Dependencies
 
 #### All Platforms (Automatic)
 ```bash
@@ -137,7 +88,7 @@ sudo apt install ffmpeg pulseaudio-utils
 uv sync --extra audio-extra
 ```
 
-### 5. Configure Environment
+### 4. Configure Environment
 ```bash
 # Copy environment template (if available)
 cp .env.example .env
@@ -164,7 +115,7 @@ python voice_storyteller_client.py
 ### Quick Start (Project Install Approach)
 ```bash
 # Run with UV directly
-uv run hikaya
+uv run Hikaya
 
 # Or run the Python files directly
 uv run python voice_storyteller_client.py
@@ -189,7 +140,7 @@ uv run ruff check .
 ### Server Mode
 ```bash
 # Run the MCP server (project install)
-uv run hikaya-server
+uv run Hikaya-server
 # OR direct Python execution
 uv run python voice_storyteller_server.py
 
@@ -221,9 +172,9 @@ python voice_storyteller_client.py
 **Option 2: Fix Project Structure**
 ```bash
 # Create proper package structure
-mkdir hikaya
-mv voice_storyteller_*.py hikaya/
-touch hikaya/__init__.py
+mkdir Hikaya
+mv voice_storyteller_*.py Hikaya/
+touch Hikaya/__init__.py
 
 # Then try uv sync again
 uv sync
@@ -416,47 +367,3 @@ uv run python voice_storyteller_client.py
 ---
 
 **Ready to create magical stories with UV's blazing speed? Let's get started! ⚡🌟**
-
-### Quick Start Summary
-```bash
-# The entire setup in 4 commands (Simple Approach):
-git clone https://github.com/yourusername/hikaya.git
-cd hikaya  
-uv venv && source .venv/bin/activate
-uv pip install -r requirements-simple.txt && echo "ANTHROPIC_API_KEY=your_key" > .env
-
-# Run it:
-python voice_storyteller_client.py
-```
-
-### Create requirements-simple.txt file:
-```bash
-# Create the simple requirements file
-cat > requirements-simple.txt << 'EOF'
-# Core Dependencies
-python-dotenv>=1.0.0
-
-# AI and Claude Integration  
-anthropic>=0.25.0
-
-# Voice Synthesis Engines
-pyttsx3>=2.90
-gTTS>=2.4.0
-edge-tts>=6.1.9
-
-# Audio Processing and Playback
-pygame>=2.5.2
-pydub>=0.25.1
-
-# Web and Network
-aiohttp>=3.9.1
-requests>=2.31.0
-
-# Data Processing
-numpy>=1.24.3
-
-# UI and Logging
-colorama>=0.4.6
-rich>=13.7.0
-EOF
-```
